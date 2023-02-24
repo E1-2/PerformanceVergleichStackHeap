@@ -12,7 +12,7 @@ int main() {
 
 	clock_t start = clock();			// Legt die Variable "start" an und starte die Zeiterfassung für die "Stack" Messung. 
 	for (int i = 0; i < zahl; ++i) {	// 10 Millionen mal
-		Data d{};						// wird das char b mit jeweils 1 MB im Stack angelegt. 
+		Data d{};						// wird das char b mit jeweils 1 KB im Stack angelegt. 
 	}
 	clock_t verbrauchte_zeit = clock() - start;		// aktuelle Zeit - start >> verbrauchte_zeit	
 	cout << " Stack Time " << float(verbrauchte_zeit) / CLOCKS_PER_SEC << " sec \n";
